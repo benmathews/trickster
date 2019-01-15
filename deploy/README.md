@@ -34,7 +34,7 @@ If you are wanting to use Helm and kubernetes rbac use the following install ste
 
 #### Deployment
 
-- Make any necessary configuration changes to `deploy/helm/values.yaml` or `deploy/helm/template/configmap.yaml`
+- Make any necessary configuration changes to `deploy/helm/trickster/values.yaml` or `deploy/helm/trickster/template/configmap.yaml`
 - Set your kubectl context to your target cluster `kubectl config use-context <context>`
 - Make sure Tiller is running `kubectl get po --namespace trickster -w`
 - Run deployment script `./deploy` from within `deploy/helm`
